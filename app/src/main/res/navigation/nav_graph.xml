@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentFirst">
+
+    <fragment
+        android:id="@+id/fragmentFirst"
+        android:name="com.melisasan2017556451.filmuygulamasi.FragmentFirst"
+        android:label="FragmentFirst" >
+        <action
+            android:id="@+id/action_fragmentFirst_to_movieListFragment"
+            app:destination="@id/movieListFragment"
+            app:exitAnim="@anim/fragment_fade_exit"/>
+        <action
+            android:id="@+id/action_fragmentFirst_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSecond"
+        android:name="com.melisasan2017556451.filmuygulamasi.FragmentSecond"
+        android:label="FragmentSecond" >
+        <action
+            android:id="@+id/action_fragmentSecond_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment"/>
+        <argument
+            android:name="query"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentThird"
+        android:name="com.melisasan2017556451.filmuygulamasi.FragmentThird"
+        android:label="FragmentThird">
+        <action
+            android:id="@+id/action_fragmentThird_to_favoriteFragment"
+            app:destination="@id/favoriteFragment"/>
+        <action
+            android:id="@+id/action_fragmentThird_to_wantToWatchFragment"
+            app:destination="@id/wantToWatchFragment"/>
+        <action
+            android:id="@+id/action_fragmentThird_to_watchedFragment"
+            app:destination="@id/watchedFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFourth"
+        android:name="com.melisasan2017556451.filmuygulamasi.FragmentFourth"
+        android:label="FragmentFourth" >
+        <action
+            android:id="@+id/action_fragmentFourth_to_profile"
+            app:destination="@id/profile"/>
+    </fragment>
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.melisasan2017556451.filmuygulamasi.MovieListFragment"
+        android:label="MovieListFragment" >
+        <action
+            android:id="@+id/action_movieListFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment"
+            app:enterAnim="@anim/fragment_open_enter" />
+        <argument
+            android:name="movieCategory"
+            android:defaultValue="Popular"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.melisasan2017556451.filmuygulamasi.MovieDetailFragment"
+        android:label="MovieDetailFragment" >
+    <argument
+        android:name="MovieId"
+        app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.melisasan2017556451.filmuygulamasi.FavoriteFragment"
+        android:label="FavoriteFragment" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/wantToWatchFragment"
+        android:name="com.melisasan2017556451.filmuygulamasi.WantToWatchFragment"
+        android:label="WantToWatchFragment" >
+        <action
+            android:id="@+id/action_wantToWatchFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/watchedFragment"
+        android:name="com.melisasan2017556451.filmuygulamasi.WatchedFragment"
+        android:label="WatchedFragment" >
+        <action
+            android:id="@+id/action_watchedFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.melisasan2017556451.filmuygulamasi.Profile"
+        android:label="Profile" />
+</navigation>

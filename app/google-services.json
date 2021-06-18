@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "964536680971",
+    "firebase_url": "https://filmuygulamasi-69926.firebaseio.com",
+    "project_id": "filmuygulamasi-69926",
+    "storage_bucket": "filmuygulamasi-69926.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964536680971:android:3c1d5cdf37f600010ffd0e",
+        "android_client_info": {
+          "package_name": "com.melisasan2017556451.filmuygulamasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964536680971-ngl89j78983hfea31i4qkjukk7q971ks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgnESPoc6_rkUEfGu22fd-FjDru_Wq-9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964536680971-ngl89j78983hfea31i4qkjukk7q971ks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

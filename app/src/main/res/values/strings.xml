@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FilmUygulamasi</string>
+    <string name="register"> <u> Yeni hesap oluştur</u></string>
+    <string name="alreadysigned"> <u> Zaten üye misiniz?</u></string>
+
+
+</resources>
